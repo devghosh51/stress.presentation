@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+*{
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+      
+      main {
+        transition: all 0.5s;
+        -webkit-text-stroke: 4px #d6f4f4;
+        font-variation-settings: "wght" 900, "ital" 1;
+        font-size: 15rem;
+        text-align: center;
+        color: transparent;
+       
+      }
+.head {
+    transition: all 0.5s;
+    -webkit-text-stroke: 4px #d6f4f4;
+    font-variation-settings: "wght" 900, "ital" 1;
+    font-size: 15rem;
+    text-align: center;
+    color: transparent;
+    font-family: "Meta", sans-serif;
+    text-shadow: 10px 10px 0px #07bccc,
+      15px 15px 0px #e601c0,
+      20px 20px 0px #e9019a,
+      25px 25px 0px #f40468,
+      45px 45px 10px #482896;
+    cursor: pointer;
+  }
+  
+  .head:hover {
+    font-variation-settings: "wght" 100, "ital" 0;
+    text-shadow: none;
+  }
+.head{
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/08/30/03/14/gradient-1629715_1280.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30px;
+}
+a{
+    text-decoration: none;
+    background: greenyellow;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+    border: 10px;
+    color: black;
+    font-size:medium;
+    text-align: center;
+    
+}
+.game {
+    background: rgb(186, 113, 255);
+}
+a:hover{
+    
+     box-shadow: 0 0 5px #f40303,
+                0 0 25px #f40303,
+                0 0 50px #f40303,
+                0 0 100px #f40303;
+}
+img{
+    padding: 10px;
+    box-shadow: 5px 5px gray;
+   transition: transform .4s; /* Animation */
+   border-radius: 30px;
+  }
+img:hover{
+    transform: scale(1.1); 
+    border-radius: 20px;
+}
+iframe{
+    width: 700px;
+    height: 400px;
+    padding: 10px;
+    border: 10px;
+    border-radius: 20px;
+}
+@media only screen and (max-width:500px) {
+    
+    iframe{
+    width: 45%;
+    height: 22%;
+    left: 60%;
+}
+.head{
+    font-size: large;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 100%;
+    border-radius: 30px;
+}
+img:hover{
+        transform: scale(1.8); 
+        border-radius: 20px; 
+}
+.group ul {
+    font-size: xx-small;
+}
+.group ul li a {
+    
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+  }
+  .group ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1.3s;
+    border-right: 10px solid var(--clr);
+    -webkit-text-stroke: 2px var(--clr);
+  }
+  .group ul li a:hover::before {
+    width: 200%;
+    filter: drop-shadow(0 0 25px var(--clr))
+  }
+}
+.dsm{
+
+margin: 10px;
+padding: 20px;
+border: 10px;
+border-radius: 20px;
+background: rgb(195, 246, 248);
+}
+h2 {
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    padding: 10px;
+    border-radius: 45%;
+}
+.dsm img{
+    text-align: right;
+}
+.ts{
+    margin: 10px;
+padding: 20px;
+border: 10px;
+border-radius: 20px;
+background:  rgb(195, 246, 248);
+}
+.ts div img {
+  border-radius: 100%;
+}
+.is{
+    margin: 10px;
+    padding: 20px;
+    border: 10px;
+    border-radius: 20px;
+    background:  rgb(195, 246, 248);
+}
+.smt{
+    margin: 10px;
+    padding: 20px;
+    border: 10px;
+    border-radius: 20px;
+    background:  rgb(195, 246, 248);
+}
+.lc{
+    margin: 10px;
+    padding: 20px;
+    border: 10px;
+    border-radius: 20px;
+    background:  rgb(195, 246, 248);
+}
+.co{
+    margin: 10px;
+    padding: 20px;
+    border: 10px;
+    border-radius: 20px;
+    background:  rgb(195, 246, 248);
+}
+.group{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 30px;
+    border: 10px;
+    
+    background-image: url(https://cdn.pixabay.com/photo/2015/06/20/07/24/color-815551_640.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 170%;
+    border-radius: 50px;
+   
+}
+.group h2 {
+    background-image: linear-gradient(to right, red , yellow);
+    padding: 50px;
+    border-radius: 60%;
+}
+i{
+    font-size: x-large;
+}
+fieldset{
+    padding: 20px 50px ;
+    align-items: center;
+
+}
+fieldset a{
+    background: none;
+}
+fieldset a:hover{
+    box-shadow: none;
+}
+
+
+.group a {
+    text-decoration: none;
+    background: transparent;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+    border: 20px;
+    color: black;
+    font-size:x-small;
+    text-align: center;   
+}
+.group a:hover{
+    
+    box-shadow:none;
+}
+
+  .group ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .group ul li {
+    position: relative;
+    list-style: none;
+  }
+  .group ul li a {
+    font-size: 3em;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+  }
+  .group ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1.3s;
+    border-right: 5px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+  }
+  .group ul li a:hover::before {
+    width: 35%;
+    filter: drop-shadow(0 0 15px var(--clr))
+  }
+
+  .dev{
+    padding: 20px;
+    margin: 5px;
+    border: 5px;
+    background: rgb(220, 219, 219);
+    border-radius: 30px;
+    text-align: center;
+  }
+  .dev a {
+    text-decoration: none;
+    background: transparent;
+  }
+  .dev a:hover{
+    box-shadow: none;
+  }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>
+        <b>Stress Management</b>
+        </h1>
+    </div>
+    <div class="main">
+        <div class="dsm">
+            <h2>
+            <b> Definition Of Stress Management </b>
+                
+            </h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoFCs-U_t6oEiFkK0t_38vA4TtLmINJCNDRbx-Kc9ReTReximKeku3j9c-Soi075mA8t0&usqp=CAU" alt="" width="40%">
+            <iframe width="400" height="260" src="https://www.youtube.com/embed/XTgbQl73dos" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>
+             It refers to the process of adopting techniques, strategies, and behaviors aimed at minimizing, coping with, and effectively navigating the challenges posed by stressors. It involves developing skills to recognize the signs of stress, implementing healthy coping mechanisms, and making lifestyle adjustments to maintain physical, emotional, and mental well-being even in demanding situations. The goal of stress management is to enhance resilience, reduce the negative impact of stress on health and daily functioning, and promote an overall improved quality of life.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Stress_management#:~:text=Stress%20management%20consists%20of%20a,purpose%20of%20improving%20everyday%20functioning.">know More <i class="ri-information-line"></i></a>
+        </div>
+        <div class="ts">
+            <h2>
+            <b>Types of Stress</b>
+            </h2>
+            <img src="https://anticancerlifestyle.org/wp-content/uploads/2021/03/Screen-Shot-2021-03-17-at-8.35.03-AM-1024x536.png" alt="" width="40%">
+            <iframe  width="400" height="260" src="https://www.youtube.com/embed/2kNEjUQjobI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>
+                🟢<b>Acute Stress:</b> This is a short-term type of stress that is typically caused by immediate pressures or demands. It's the body's natural response to a perceived threat, often referred to as the "fight or flight" response. Acute stress can be caused by situations such as a job interview, public speaking, or narrowly avoiding a car accident.</p>
+
+                <p>🟢 <b>Episodic Acute Stress:</b> Some individuals experience acute stress frequently, resulting in what's known as episodic acute stress. These individuals tend to be "worriers" and often feel overwhelmed by the demands of daily life. They might have a tendency to take on too much and frequently find themselves in stressful situations.</p>
+
+                <p>🟢<b>Chronic Stress:</b> This type of stress is more long-term and ongoing. It can be caused by persistent and unrelenting stressors such as financial difficulties, relationship problems, or ongoing work-related pressures. Chronic stress can have a serious impact on physical and mental health if not properly managed.</p>
+
+                <p>Each type of stress has different causes, effects, and management strategies. Recognizing the type of stress you're experiencing is crucial for effectively addressing and managing . </p>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf4zBYLtSk0NoU22c5-_fO-63KUAB_uNGCcg&usqp=CAU" alt="" width="40%">
+                </div>
+                <a href="https://simple.wikipedia.org/wiki/Stress_(biology)">Know More <i class="ri-information-line"></i></a>
+      </div>
+      <div class="is">
+        <h2><b>Identify stress</b></h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwrvkFJ4soBWK78Dd1R6b4GmnKgrKhvy0EGQ7EMqPQCbM08MSG_zxrKU5Exvt2KyJoLQ&usqp=CAU" alt="" width="30%">
+        <iframe  width="400" height="260" src="https://www.youtube.com/embed/t39pAFp-QqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>
+            Identifying stress involves recognizing the physical, emotional, and behavioral signs that indicate your body and mind are responding to stressors. Here are some common ways to identify stress:
+        </p>
+        <h3>🟢<b>Physical Signs:</b></h3>
+         <ul>
+            <li><b>Headaches:</b> Frequent or intense headaches can be a sign of stress.</li>
+            <li><b>Fatigue:</b> Feeling constantly tired or lacking energy, even after adequate rest.</li>
+            <li><b>Muscle Tension:</b> Experiencing muscle stiffness or tension, often in the neck, shoulders, or back.</li>
+            <li><b>Digestive Issues:</b> Stress can lead to stomachaches, indigestion, or changes in appetite.</li>
+            <li><b>Sleep Problems:</b> Difficulty falling asleep, staying asleep, or experiencing restless sleep.</li>
+            <li><b>Increased Heart Rate:</b> Feeling your heart racing or pounding due to stress-induced adrenaline release.</li>
+         </ul>
+         <h3>🟢<b>Emotional Signs:</b></h3>
+         <ul>
+            <li><b>Anxiety:</b> Feeling worried, apprehensive, or uneasy, often without a specific reason.</li>
+            <li><b>Irritability:</b> Becoming easily annoyed, short-tempered, or quick to anger.</li>
+            <li><b>Mood Swings:</b> Experiencing sudden shifts in emotions, from happiness to sadness or vice versa.</li>
+            <li><b>Depression:</b> Feeling persistent sadness, hopelessness, or loss of interest in activities.</li>
+            <li><b>Difficulty Concentrating: </b>Finding it hard to focus, make decisions, or remember things.</li>
+         </ul>
+         <h3>🟢<b>Behavioral Signs:</h3>
+         <ul>
+            <li><b>Changes in Eating Patterns: </b>Overeating or loss of appetite due to stress-related emotional eating.</li>
+            <li><b>Social Withdrawal:</b> Avoiding social interactions and isolating oneself from friends and family.</li>
+            <li><b>Increased Substance Use:</b> Turning to alcohol, tobacco, or other substances as a way to cope.</li>
+            <li><b>Procrastination:</b> Putting off tasks and responsibilities due to feeling overwhelmed.</li>
+            <li><b>Nervous Habits:</b> Engaging in habits like nail biting, fidgeting, or pacing when stressed.</li>
+        </ul>
+        <a href="https://en.wikipedia.org/wiki/Stress_(biology)#:~:text=Stress%2C%20either%20physiological%2C%20biological%20or,or%20physical%20and%20psychological%20barrier.">Know More <i class="ri-information-line"></i></a>
+      </div>
+        <div class="smt">
+            <h2><b>Stress Management Techniques</b></h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbECsfo-Mn_1hF_mRkQIDrQctcyifr3gEpbrF8HriM4uRMTbPVkA7jGlSkd4cIzb4z8Pw&usqp=CAU" alt="" width="25%">
+            <iframe  width="400" height="260" src="https://www.youtube.com/embed/hnpQrMqDoqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <ul>
+                <li><b>Deep Breathing: </b>Practice deep and slow breathing to trigger the body's relaxation response and reduce stress hormones.</li>
+                <li><b>Mindfulness and Meditation:</b> Engage in mindfulness exercises or meditation to stay present and calm your mind.</li>
+                <li><b>Physical Activity:</b> Regular exercise helps release endorphins, which are natural mood lifters and stress reducers.</li>
+                <li><b>Yoga:</b> Combines physical postures, breathing, and meditation to reduce stress and improve flexibility.</li>
+                <li><b>Healthy Eating:</b> Consume a balanced diet rich in fruits, vegetables, and whole grains to support your body's stress response.</li>
+                <li><b>Time Management:</b> Break tasks into manageable steps, prioritize, and avoid overloading your schedule.</li>
+                <li><b>Visualization:</b> Imagine a peaceful place or situation to help reduce stress and promote a sense of calm.</li>
+            </ul>
+            <a class="game" href="https://devghosh51.github.io/Tic-Tac-Toe/" target="_blank" >Play Game <i class="ri-gamepad-line"></i></a>
+            <a  href="https://en.wikipedia.org/wiki/Signs_and_symptoms#:~:text=Vital%20signs%20are%20the%20four,gender%20and%20with%20general%20health.">Know More <i class="ri-information-line"></i></a>
+        </div>
+        <div class="lc">
+            <h2> <b>Lifestyle Changes</b></h2>
+            <img src="https://admin.risingkashmir.com/Source/News/userfiles/image/s_637966736919503014_Image_OP_1_-_2022-08-21T224441.882.png" alt="" width="40%">
+            <iframe  width="400" height="260" src="https://www.youtube.com/embed/Cg_GW7yhq20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <ul>
+                <li><b>Regular Exercise:</b> Engaging in physical activity helps release endorphins, which are natural mood enhancers. Aim for at least 30 minutes of exercise most days of the week.</li>
+                <li><b>Adequate Sleep:</b> Prioritize getting 7-9 hours of quality sleep each night to restore your body and mind.</li>
+                <li><b>Time Management:</b> Create a schedule that allows you to prioritize tasks, set realistic goals, and allocate time for relaxation.</li>
+                <li><b>Social Connections: </b>Nurture relationships with friends and family members who provide emotional support and companionship.</li>
+                <li><b>Stress-Reducing Techniques: </b>Practice relaxation methods like deep breathing, progressive muscle relaxation, or guided imagery.</li>
+                <li><b>Supportive Environment:</b> Surround yourself with positive influences and seek help from professionals if needed.</li>
+                <li><b>Positive Self-Talk:</b> Replace negative self-talk with positive affirmations and self-compassion.</li>
+                
+            </ul>
+            <a href="https://en.wikipedia.org/wiki/Psychological_stress#:~:text=Studies%20have%20shown%20that%20exercise,%2C%20and%20improves%20self%2Desteem.">Know More <i class="ri-information-line"></i></a>
+        </div>
+        <div class="co">
+            <h2>
+                <b>Conclusion</b>
+            </h2>
+            <p>
+                In conclusion, stress is a natural response that our bodies employ to deal with challenges and demands. While it can be a motivating force, prolonged or unmanaged stress can have detrimental effects on our physical, emotional, and mental well-being. Recognizing the signs of stress, understanding its different types, and identifying personal stressors are crucial steps in effective stress management.</p>
+                
+               <p> By adopting a combination of stress management techniques, such as deep breathing, mindfulness, exercise, and healthy lifestyle changes, individuals can take control of their stress levels and promote their overall quality of life. It's important to prioritize self-care, seek social support, and, when necessary, reach out to professionals for guidance.</p> 
+                
+               <p>Stress is an inevitable part of life, but with the right strategies and mindset, we can navigate its challenges and emerge stronger and more resilient. By incorporating these practices into our daily lives, we can work towards achieving a balanced and harmonious state of well-being, even in the face of life's inevitable stressors.</p>
+        </div>
+
+    </div>
+    <footer>
+
+        <div class="group">
+           <h2> <b>Made By GROUP B</b></h2>
+            
+            <ul>
+                <li style="--clr:#00ade1">
+                  <a data-text="&nbsp;Priti_Kesharwani">&nbsp;Priti_Kesharwani&nbsp;</a>
+                </li>
+                <li style="--clr:#ff6492">
+                  <a  data-text="&nbsp;Piu_Kirtania">&nbsp;Piu_Kirtania&nbsp;</a>
+                </li>
+                <li style="--clr:#ffdd1c">
+                  <a data-text="&nbsp;Bubai_Bera">&nbsp;Bubai_Bera&nbsp;</a>
+                </li>
+                <li style="--clr:#00dc82">
+                  <a  data-text="&nbsp;Suparna_Jana">&nbsp;Suparna_Jana&nbsp;</a>
+                </li>
+                <li style="--clr:#dc00d4">
+                  <a data-text="&nbsp;Musarat_Khatoon">&nbsp;Musarat_Khatoon&nbsp;</a>
+                </li>
+                <li style="--clr:#800080">
+                    <a  data-text="&nbsp;Swagata_Das">&nbsp;Swagata_Das&nbsp;</a>
+                  </li>
+                  <li style="--clr:#ff4500">
+                    <a  data-text="&nbsp;Dev_Kumar_Ghosh">&nbsp;Dev_Kumar_Ghosh&nbsp;</a>
+                  </li>
+              </ul>
+              
+        </div>
+        
+    </footer>
+    <div class="dev">
+        Desing by <a href="https://www.instagram.com/insta_dev1/">Dev <i class="ri-instagram-line"></i></a>
+    </div>
+</body>
+</html>
