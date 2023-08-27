@@ -3,10 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stress Management</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>STRESS MANAGEMENT</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+        @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin:0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+/*by dev kumar ghosh*/
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white;
+}
+.logo {
+  width:30px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+
+.inner-header {
+  height:20vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*by dev kumar ghosh*/
+.waves {
+  position:relative;
+  width: 100%;
+  height:20vh;
+  margin-bottom:-7px; 
+  min-height:100px;
+  max-height:250px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+/*by dev kumar ghosh*/
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+@media (max-width: 768px) {
+  .waves {
+    height:50px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+/*by dev kumar ghosh*/
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 *{
    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -23,38 +128,10 @@
         font-size: 15rem;
         text-align: center;
         color: transparent;
+
        
       }
-.head {
-    transition: all 0.5s;
-    -webkit-text-stroke: 4px #d6f4f4;
-    font-variation-settings: "wght" 900, "ital" 1;
-    font-size: 15rem;
-    text-align: center;
-    color: transparent;
-    font-family: "Meta", sans-serif;
-    text-shadow: 10px 10px 0px #07bccc,
-      15px 15px 0px #e601c0,
-      20px 20px 0px #e9019a,
-      25px 25px 0px #f40468,
-      45px 45px 10px #482896;
-    cursor: pointer;
-  }
-  
-  .head:hover {
-    font-variation-settings: "wght" 100, "ital" 0;
-    text-shadow: none;
-  }
-.head{
-    font-size: xx-large;
-    text-align: center;
-    padding: 20px;
-    background-image: url(https://cdn.pixabay.com/photo/2016/08/30/03/14/gradient-1629715_1280.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border-radius: 30px;
-}
+     
 a{
     text-decoration: none;
     background: greenyellow;
@@ -77,6 +154,7 @@ a:hover{
                 0 0 50px #f40303,
                 0 0 100px #f40303;
 }
+/*by dev kumar ghosh*/
 img{
     padding: 10px;
     box-shadow: 5px 5px gray;
@@ -112,6 +190,7 @@ img:hover{
         transform: scale(1.8); 
         border-radius: 20px; 
 }
+/*by dev kumar ghosh*/
 .group ul {
     font-size: xx-small;
 }
@@ -140,18 +219,22 @@ img:hover{
   }
 }
 .dsm{
-
+font-family:'Times New Roman', Times, serif;
 margin: 10px;
 padding: 20px;
 border: 10px;
 border-radius: 20px;
-background: rgb(195, 246, 248);
+background: rgb(175, 206, 237);
+box-shadow: 6px 6px #333333;
 }
 h2 {
     text-align: center;
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
     padding: 10px;
     border-radius: 45%;
+    box-shadow: 6px 3px #bf6868;
+
+
 }
 .dsm img{
     text-align: right;
@@ -161,7 +244,8 @@ h2 {
 padding: 20px;
 border: 10px;
 border-radius: 20px;
-background:  rgb(195, 246, 248);
+background:  rgb(200, 164, 164);
+box-shadow: 6px 6px #333333;
 }
 .ts div img {
   border-radius: 100%;
@@ -171,37 +255,44 @@ background:  rgb(195, 246, 248);
     padding: 20px;
     border: 10px;
     border-radius: 20px;
-    background:  rgb(195, 246, 248);
+    background:  rgb(145, 231, 140);
+    box-shadow: 6px 6px #333333;
 }
 .smt{
     margin: 10px;
     padding: 20px;
     border: 10px;
     border-radius: 20px;
-    background:  rgb(195, 246, 248);
+    background:  rgb(193, 158, 192);
+    box-shadow: 6px 6px #333333;
 }
 .lc{
     margin: 10px;
     padding: 20px;
     border: 10px;
     border-radius: 20px;
-    background:  rgb(195, 246, 248);
+    background:  rgb(248, 220, 163);
+    box-shadow: 6px 6px #333333;
 }
 .co{
     margin: 10px;
     padding: 20px;
     border: 10px;
     border-radius: 20px;
-    background:  rgb(195, 246, 248);
+    background:  rgb(124, 250, 173);
+    box-shadow: 6px 6px #333333;
 }
 .ac{
   margin: 10px;
     padding: 20px;
     border: 10px;
     border-radius: 20px;
-    background:  rgb(195, 246, 248);
+    background:  rgb(248, 195, 241);
+    box-shadow: 6px 6px #333333;
 }
+/*by dev kumar ghosh*/
 .group{
+  margin: 10px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 30px;
@@ -212,6 +303,7 @@ background:  rgb(195, 246, 248);
     background-position: center;
     background-size: 170%;
     border-radius: 50px;
+    box-shadow: 6px 6px #333333;
    
 }
 .group h2 {
@@ -233,7 +325,7 @@ fieldset a{
 fieldset a:hover{
     box-shadow: none;
 }
-
+/*by dev kumar ghosh*/
 
 .group a {
     text-decoration: none;
@@ -284,14 +376,15 @@ fieldset a:hover{
     width: 35%;
     filter: drop-shadow(0 0 15px var(--clr))
   }
-
+/*by dev kumar ghosh*/
   .dev{
     padding: 20px;
-    margin: 5px;
+    margin: 10px;
     border: 5px;
     background: rgb(220, 219, 219);
     border-radius: 30px;
     text-align: center;
+    box-shadow: 6px 6px #333333;
   }
   .dev a {
     text-decoration: none;
@@ -300,13 +393,63 @@ fieldset a:hover{
   .dev a:hover{
     box-shadow: none;
   }
+  p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  h1{
+    text-transform: uppercase;
+  }
+  h1:hover{
+    padding: 20px;
+    border: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #03f4e8,
+                0 0 25px #03f4e8,
+                0 0 50px #03f4e8,
+                0 0 100px #03f4e8;
+            }
     </style>
 </head>
 <body>
-    <div class="head">
-        <h1>
+
+
+<div class="header">
+
+    
+    <div class="inner-header flex">
+    
+    <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
+    <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
+
+    </svg>
+    <h1>
         <b>Stress Management</b>
-        </h1>
+    </h1>
+    </div>
+    
+    
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--by dev kumar ghosh-->
+    
+    </div>
+    <!--Header ends-->
+    
+    <div class="head">
+        
     </div>
     <div class="main">
         <div class="dsm">
@@ -340,6 +483,7 @@ fieldset a:hover{
                 </div>
                 <a href="https://simple.wikipedia.org/wiki/Stress_(biology)">Know More <i class="ri-information-line"></i></a>
       </div>
+      <!--by dev kumar ghosh-->
       <div class="is">
         <h2><b>Identify stress</b></h2>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwrvkFJ4soBWK78Dd1R6b4GmnKgrKhvy0EGQ7EMqPQCbM08MSG_zxrKU5Exvt2KyJoLQ&usqp=CAU" alt="" width="30%">
@@ -406,6 +550,7 @@ fieldset a:hover{
             </ul>
             <a href="https://en.wikipedia.org/wiki/Psychological_stress#:~:text=Studies%20have%20shown%20that%20exercise,%2C%20and%20improves%20self%2Desteem.">Know More <i class="ri-information-line"></i></a>
         </div>
+        <!--by dev kumar ghosh-->
         <div class="ac">
           <h2> <b>Acknowledgment</b></h2>
           <img src="https://mylocalweb.files.wordpress.com/2017/06/images.jpg?w=640" alt="" width="40%">
@@ -427,6 +572,7 @@ fieldset a:hover{
 
     </div>
     <footer>
+        <!--by dev kumar ghosh-->
 
         <div class="group">
            <h2> <b>Made By GROUP B</b></h2>
@@ -461,5 +607,6 @@ fieldset a:hover{
     <div class="dev">
         Desing by <a href="https://www.instagram.com/insta_dev1/">Dev <i class="ri-instagram-line"></i></a>
     </div>
+    <!--by dev kumar ghosh-->
 </body>
 </html>
